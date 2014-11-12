@@ -92,5 +92,11 @@ angular.module('myApp.controllers', [])
                     $scope.data[i].push(billboard[year][i]);
                 }
             }
+
+            $scope.showDetail = function(song){
+                console.log(song);
+                $scope.selectedSong = song;
+                $('.modal').modal('show');
+            }
         }
     ]);
