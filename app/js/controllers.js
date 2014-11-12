@@ -79,7 +79,10 @@ angular.module('myApp.controllers', [])
 ])
 .controller('MainCtrl2', ['$scope', '$rootScope', '$location',
         function($scope, $rootScope) {
-            
+            $scope.attrs = ['energy', 'liveness', 'speechiness', 'acousticness', 'danceability', 'instrumentalness', 'valence'];
+            $scope.red = 'energy';
+            $scope.green = 'liveness';
+            $scope.blue = 'speechiness';
             $scope.data = [];
             for (var i = 0; i < 10; i++){
                 $scope.data.push([])

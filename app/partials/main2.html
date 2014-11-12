@@ -1,5 +1,28 @@
+<form role="form">
+	<div class="col-md-4">
+		<div class="form-group">
+			<label for="red">Red</label>
+			<select id="red" class="form-control" ng-model="red" ng-options="attr for attr in attrs">
+			</select>
+		</div>
+	</div>
+	<div class="col-md-4">
+		<div class="form-group">
+			<label for="green">Green</label>
+			<select id="green" class="form-control" ng-model="green" ng-options="attr for attr in attrs">
+			</select>
+		</div>
+	</div>
+	<div class="col-md-4">
+		<div class="form-group">
+			<label for="blue">Blue</label>
+			<select id="blue" class="form-control" ng-model="blue" ng-options="attr for attr in attrs">
+			</select>
+		</div>
+	</div>
+</form>
 <table style="width:100%">
 	<tr ng-repeat="year in data">
-		<td ng-repeat="song in year" style="width:1.81%; height:2em; background-color: rgb({{((1-song.valence)+song.energy)*255 | number: 0}}, {{song.acousticness*255 | number: 0}}, {{song.danceability*255 | number: 0}})"></td>
+		<td ng-repeat="song in year" style="width:1.81%; height:2em; background-color: rgb({{song[red]*255 | number: 0}}, {{song[green]*255 | number: 0}}, {{song[blue]*255 | number: 0}})"></td>
 	</tr>
 </table>
