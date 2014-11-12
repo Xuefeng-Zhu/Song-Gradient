@@ -79,6 +79,15 @@ angular.module('myApp.controllers', [])
 ])
 .controller('MainCtrl2', ['$scope', '$rootScope', '$location',
         function($scope, $rootScope) {
-            $scope.data = billboard;
+            
+            $scope.data = [];
+            for (var i = 0; i < 10; i++){
+                $scope.data.push([])
+            }
+            for (var year in billboard){
+                for (var i = 0; i < 10; i++){
+                    $scope.data[i].push(billboard[year][i]);
+                }
+            }
         }
     ]);

@@ -1,5 +1,5 @@
 <table style="width:100%">
 	<tr ng-repeat="year in data">
-		<td ng-repeat="song in year" style="width:10%; height:2em; background-color: rgb({{song.liveness*255 | number: 0}}, {{song.speechiness*255 | number: 0}}, {{song.danceability*255 | number: 0}})"></td>
+		<td ng-repeat="song in year" style="width:1.81%; height:2em; background-color: rgb({{((1-song.valence)+song.energy)*255 | number: 0}}, {{song.acousticness*255 | number: 0}}, {{song.danceability*255 | number: 0}})"></td>
 	</tr>
 </table>
