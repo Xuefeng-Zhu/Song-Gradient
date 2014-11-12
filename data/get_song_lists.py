@@ -9,7 +9,7 @@ if __name__ == '__main__':
 		trs = table('tr')
 		for i in range(1, len(trs)):
 			tr = trs.eq(i)
-			song = tr.find('td').eq(1).text().strip(' "')
+			song = tr.children().eq(1).text().strip(' "')
 			list.append(song)
 		result[year] = list
 	with open('Billboard_year-end_top_30_singles.txt', 'w') as f:
