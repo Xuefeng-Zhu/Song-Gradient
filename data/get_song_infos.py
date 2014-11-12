@@ -16,7 +16,10 @@ if __name__ == '__main__':
 		for s in range(10):
 			time.sleep(1.1)
 			search_results = song.search(title=s)
-			temp.append(search_results[0].audio_summary)
+			a_s = search_results[0].audio_summary
+			a_s['song_name'] = s
+			a_s['artist_name'] = search_results[0].artist_name
+			temp.append(a_s)
 		result[year] = temp
 
 	with open('data.txt', 'w') as f:
