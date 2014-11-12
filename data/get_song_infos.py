@@ -13,13 +13,16 @@ if __name__ == '__main__':
 	for year in lists:
 		list = lists[year]
 		temp = []
-		for s in range(10):
+		i = 0
+		while len(temp) < 10:
 			time.sleep(1.1)
-			search_results = song.search(title=s)
-			a_s = search_results[0].audio_summary
-			a_s['song_name'] = s
-			a_s['artist_name'] = search_results[0].artist_name
-			temp.append(a_s)
+			search_results = song.search(title=list[i])
+			if len(search_results) > 0:
+				a_s = search_results[0].audio_summary
+				a_s['song_name'] = list[i]
+				a_s['artist_name'] = search_results[0].artist_name
+				temp.append(a_s)
+			i += 1
 		result[year] = temp
 
 	with open('data.txt', 'w') as f:
