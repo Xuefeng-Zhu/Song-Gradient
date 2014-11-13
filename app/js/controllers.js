@@ -83,6 +83,8 @@ angular.module('myApp.controllers', [])
             $scope.red = 'energy';
             $scope.green = 'liveness';
             $scope.blue = 'speechiness';
+            $scope.color = 'energy';
+            $scope.billboard = billboard;
             $scope.data = [];
             for (var i = 0; i < 10; i++){
                 $scope.data.push([])
@@ -94,7 +96,6 @@ angular.module('myApp.controllers', [])
             }
 
             $scope.showDetail = function(song){
-                console.log(song);
                 $scope.selectedSong = song;
                 $('.modal').modal('show');
             }

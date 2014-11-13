@@ -25,7 +25,40 @@
 	<tr ng-repeat="row in data">
 		<td ng-repeat="song in row" style="width:1.81%; height:2em; background-color: rgb({{song[red]*255 | number: 0}}, {{song[green]*255 | number: 0}}, {{song[blue]*255 | number: 0}})" ng-click="showDetail(song)"></td>
 	</tr>
+	<tr>
+		<td colspan="2">1960</td>
+		<td colspan="10" style="text-align: right">1970</td>
+		<td colspan="10" style="text-align: right">1980</td>
+		<td colspan="10" style="text-align: right">1990</td>
+		<td colspan="10" style="text-align: right">2000</td>
+		<td colspan="10" style="text-align: right">2010</td>
+	</tr>
 </table>
+
+<form role="form">
+	<div class="col-md-12">
+		<div class="form-group">
+			<label for="color">Color</label>
+			<select id="color" class="form-control" ng-model="color" ng-options="attr for attr in attrs">
+			</select>
+		</div>
+	</div>
+</form>
+<table style="width:100%">
+	<tr ng-repeat="row in data">
+		<td ng-repeat="song in row" style="width:1.81%; height:2em; background-color: hsl({{song[color] * 180 + 30}}, 100%, 50%)" ng-click="showDetail(song)"></td>
+	</tr>
+	<tr>
+		<td colspan="2">1960</td>
+		<td colspan="10" style="text-align: right">1970</td>
+		<td colspan="10" style="text-align: right">1980</td>
+		<td colspan="10" style="text-align: right">1990</td>
+		<td colspan="10" style="text-align: right">2000</td>
+		<td colspan="10" style="text-align: right">2010</td>
+	</tr>
+</table>
+
+
 <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
 	<div class="modal-dialog modal-lg">
 		<div class="modal-content">

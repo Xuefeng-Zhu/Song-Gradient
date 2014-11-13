@@ -1,0 +1,2388 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Audio Visualization</title>
+    <style>
+        body {background-color:#ffffff;} 
+        div {
+            height:100px;
+            width:200px;
+            float:left;
+            margin-left:0px;
+            margin-top:0px;
+            border-radius:8px;
+        }   
+        p {
+            float:center;
+            font-size:12px;
+            font-family: Courier;
+            color: white;
+            text-align: center;
+            vertical-align: middle;
+            line-height:20px;
+            width:60%;
+            margin:15px auto;
+        }
+    </style>
+</head>
+<body>
+
+    <div style="background-color:#b2173c;opacity:1;">
+        <p>All Is Violent, All Is Bright<br>God Is An Astronaut</p>
+    </div>
+
+    <div style="background-color:#af28b8;opacity:1;">
+        <p>Azure<br>Paul Kalkbrenner</p>
+    </div>
+
+    <div style="background-color:#a0a190;opacity:1;">
+        <p>Take Me To Church<br>Hozier</p>
+    </div>
+
+    <div style="background-color:#b30095;opacity:1;">
+        <p>Animals<br>Maroon 5</p>
+    </div>
+
+    <div style="background-color:#a310bb;opacity:1;">
+        <p>Habits (Stay High)<br>Tove Lo</p>
+    </div>
+
+    <div style="background-color:#ba0278;opacity:1;">
+        <p>Love Me Harder<br>Ariana Grande</p>
+    </div>
+
+    <div style="background-color:#9e856e;opacity:1;">
+        <p>Stay With Me<br>Sam Smith</p>
+    </div>
+
+    <div style="background-color:#740cce;opacity:1;">
+        <p>All About That Bass<br>Meghan Trainor</p>
+    </div>
+
+    <div style="background-color:#7009b6;opacity:1;">
+        <p>Cool Kids<br>Echosmith</p>
+    </div>
+
+    <div style="background-color:#7f0000;opacity:1;">
+        <p>I Don't Fuck With You<br>Big Sean</p>
+    </div>
+
+    <div style="background-color:#a902b2;opacity:1;">
+        <p>Jealous<br>Nick Jonas</p>
+    </div>
+
+    <div style="background-color:#c00769;opacity:1;">
+        <p>Blame<br>Calvin Harris</p>
+    </div>
+
+    <div style="background-color:#8642b5;opacity:1;">
+        <p>Bang Bang<br>Jessie J</p>
+    </div>
+
+    <div style="background-color:#809bad;opacity:1;">
+        <p>I'm Not The Only One<br>Sam Smith</p>
+    </div>
+
+    <div style="background-color:#9d0568;opacity:1;">
+        <p>Chandelier<br>Sia</p>
+    </div>
+
+    <div style="background-color:#9d0077;opacity:1;">
+        <p>Steal My Girl<br>One Direction</p>
+    </div>
+
+    <div style="background-color:#9c777b;opacity:1;">
+        <p>Riptide<br>Vance Joy</p>
+    </div>
+
+    <div style="background-color:#9889db;opacity:1;">
+        <p>Don't Tell 'Em<br>Jeremih</p>
+    </div>
+
+    <div style="background-color:#8798a3;opacity:1;">
+        <p>Trumpets<br>Jason Derulo</p>
+    </div>
+
+    <div style="background-color:#a80fca;opacity:1;">
+        <p>Hot N*gga<br>Bobby Shmurda</p>
+    </div>
+
+    <div style="background-color:#9733bc;opacity:1;">
+        <p>Black Widow<br>Iggy Azalea</p>
+    </div>
+
+    <div style="background-color:#832acb;opacity:1;">
+        <p>Rather Be (feat. Jess Glynne)<br>Clean Bandit</p>
+    </div>
+
+    <div style="background-color:#6f7dc7;opacity:1;">
+        <p>Thinking Out Loud<br>Ed Sheeran</p>
+    </div>
+
+    <div style="background-color:#5f02ce;opacity:1;">
+        <p>Don't<br>Ed Sheeran</p>
+    </div>
+
+    <div style="background-color:#b40156;opacity:1;">
+        <p>Centuries<br>Fall Out Boy</p>
+    </div>
+
+    <div style="background-color:#b601ad;opacity:1;">
+        <p>Break Free<br>Ariana Grande</p>
+    </div>
+
+    <div style="background-color:#9bc49e;opacity:1;">
+        <p>0 To 100 / The Catch Up<br>Drake</p>
+    </div>
+
+    <div style="background-color:#6f03bc;opacity:1;">
+        <p>Maps<br>Maroon 5</p>
+    </div>
+
+    <div style="background-color:#7268e2;opacity:1;">
+        <p>Stolen Dance<br>Milky Chance</p>
+    </div>
+
+    <div style="background-color:#9e0193;opacity:1;">
+        <p>Shut Up and Dance<br>Walk the Moon</p>
+    </div>
+
+    <div style="background-color:#983ac4;opacity:1;">
+        <p>Tuesday (feat. Drake)<br>I LOVE MAKONNEN</p>
+    </div>
+
+    <div style="background-color:#ae0b83;opacity:1;">
+        <p>Heroes (we could be)<br>Alesso</p>
+    </div>
+
+    <div style="background-color:#8c1983;opacity:1;">
+        <p>Leave The Night On<br>Sam Hunt</p>
+    </div>
+
+    <div style="background-color:#7f0000;opacity:1;">
+        <p>Outside<br>Calvin Harris</p>
+    </div>
+
+    <div style="background-color:#ab19e8;opacity:1;">
+        <p>Fancy<br>Iggy Azalea</p>
+    </div>
+
+    <div style="background-color:#96039d;opacity:1;">
+        <p>Lifestyle<br>Rich Gang</p>
+    </div>
+
+    <div style="background-color:#a86eb4;opacity:1;">
+        <p>Geronimo<br>Sheppard</p>
+    </div>
+
+    <div style="background-color:#8702d3;opacity:1;">
+        <p>Waves - Robin Schulz Radio Edit<br>Mr. Probz</p>
+    </div>
+
+    <div style="background-color:#690bc5;opacity:1;">
+        <p>Rude<br>Magic!</p>
+    </div>
+
+    <div style="background-color:#a304dd;opacity:1;">
+        <p>No Type<br>Rae Sremmurd</p>
+    </div>
+
+    <div style="background-color:#9d59d8;opacity:1;">
+        <p>Only<br>Nicki Minaj</p>
+    </div>
+
+    <div style="background-color:#7110f2;opacity:1;">
+        <p>Anaconda<br>Nicki Minaj</p>
+    </div>
+
+    <div style="background-color:#bb018c;opacity:1;">
+        <p>A Sky Full of Stars<br>Coldplay</p>
+    </div>
+
+    <div style="background-color:#93047f;opacity:1;">
+        <p>Latch<br>Disclosure</p>
+    </div>
+
+    <div style="background-color:#b208b1;opacity:1;">
+        <p>Shower<br>Becky G</p>
+    </div>
+
+    <div style="background-color:#77ec55;opacity:1;">
+        <p>All of Me<br>John Legend</p>
+    </div>
+
+    <div style="background-color:#b0085e;opacity:1;">
+        <p>Amnesia<br>5 Seconds Of Summer</p>
+    </div>
+
+    <div style="background-color:#7629b8;opacity:1;">
+        <p>Am I Wrong<br>Nico & Vinz</p>
+    </div>
+
+    <div style="background-color:#9505a9;opacity:1;">
+        <p>Problem<br>Ariana Grande</p>
+    </div>
+
+    <div style="background-color:#910597;opacity:1;">
+        <p>Summer<br>Calvin Harris</p>
+    </div>
+
+    <div style="background-color:#7e04c2;opacity:1;">
+        <p>i<br>Kendrick Lamar</p>
+    </div>
+
+    <div style="background-color:#700cc5;opacity:1;">
+        <p>Lips Are Movin<br>Meghan Trainor</p>
+    </div>
+
+    <div style="background-color:#7f0000;opacity:1;">
+        <p>Fall Out Boy - Today's Top Hits Intro<br>Various Artists</p>
+    </div>
+
+    <div style="background-color:#ab44cd;opacity:1;">
+        <p>Beg For It<br>Iggy Azalea</p>
+    </div>
+
+    <div style="background-color:#934e6d;opacity:1;">
+        <p>In Your Arms<br>Nico & Vinz</p>
+    </div>
+
+    <div style="background-color:#8f01a4;opacity:1;">
+        <p>Can't Stop Dancin'<br>Becky G</p>
+    </div>
+
+    <div style="background-color:#9d0077;opacity:1;">
+        <p>Steal My Girl<br>One Direction</p>
+    </div>
+
+    <div style="background-color:#9c8735;opacity:1;">
+        <p>Medicine<br>The 1975</p>
+    </div>
+
+    <div style="background-color:#700cc5;opacity:1;">
+        <p>Lips Are Movin<br>Meghan Trainor</p>
+    </div>
+
+    <div style="background-color:#7f0000;opacity:1;">
+        <p>Ariana Grande - Today's Top Hits Intro<br>Various Artists</p>
+    </div>
+
+    <div style="background-color:#ba0278;opacity:1;">
+        <p>Love Me Harder<br>Ariana Grande</p>
+    </div>
+
+    <div style="background-color:#a001a2;opacity:1;">
+        <p>Never Been In Love (feat. Icona Pop)<br>Cobra Starship</p>
+    </div>
+
+    <div style="background-color:#b20981;opacity:1;">
+        <p>Heroes (we could be)<br>Alesso</p>
+    </div>
+
+    <div style="background-color:#ac4461;opacity:1;">
+        <p>Pretend<br>Tinashe</p>
+    </div>
+
+    <div style="background-color:#a40fb0;opacity:1;">
+        <p>Habits (Stay High)<br>Tove Lo</p>
+    </div>
+
+    <div style="background-color:#7009b6;opacity:1;">
+        <p>Cool Kids<br>Echosmith</p>
+    </div>
+
+    <div style="background-color:#8a07b6;opacity:1;">
+        <p>Too Cool To Dance<br>Eden xo</p>
+    </div>
+
+    <div style="background-color:#a902b2;opacity:1;">
+        <p>Jealous<br>Nick Jonas</p>
+    </div>
+
+    <div style="background-color:#a302af;opacity:1;">
+        <p>Baby Don't Lie<br>Gwen Stefani</p>
+    </div>
+
+    <div style="background-color:#8c56c2;opacity:1;">
+        <p>Don't Go Home Without Me<br>LIGHTS</p>
+    </div>
+
+    <div style="background-color:#8f0479;opacity:1;">
+        <p>L.A.LOVE (la la)<br>Fergie</p>
+    </div>
+
+    <div style="background-color:#b636a4;opacity:1;">
+        <p>Outside<br>Calvin Harris</p>
+    </div>
+
+    <div style="background-color:#8a0ccc;opacity:1;">
+        <p>Touchin, Lovin (feat. Nicki Minaj)<br>Trey Songz</p>
+    </div>
+
+    <div style="background-color:#990a94;opacity:1;">
+        <p>The Days<br>Avicii</p>
+    </div>
+
+    <div style="background-color:#a0a190;opacity:1;">
+        <p>Take Me To Church<br>Hozier</p>
+    </div>
+
+    <div style="background-color:#9a2fcd;opacity:1;">
+        <p>Undressed<br>Kim Cesarion</p>
+    </div>
+
+    <div style="background-color:#ca3875;opacity:1;">
+        <p>Rolling Stone<br>Niykee Heaton</p>
+    </div>
+
+    <div style="background-color:#9d0568;opacity:1;">
+        <p>Chandelier<br>Sia</p>
+    </div>
+
+    <div style="background-color:#bf0b80;opacity:1;">
+        <p>I Can't Stop Drinking About You<br>Bebe Rexha</p>
+    </div>
+
+    <div style="background-color:#6f7dc7;opacity:1;">
+        <p>Thinking Out Loud<br>Ed Sheeran</p>
+    </div>
+
+    <div style="background-color:#b20076;opacity:1;">
+        <p>Animals<br>Maroon 5</p>
+    </div>
+
+    <div style="background-color:#b205a3;opacity:1;">
+        <p>Back to Home<br>Tristan Prettyman</p>
+    </div>
+
+    <div style="background-color:#a86eb4;opacity:1;">
+        <p>Geronimo<br>Sheppard</p>
+    </div>
+
+    <div style="background-color:#b70faa;opacity:1;">
+        <p>Purple Light<br>Elliphant</p>
+    </div>
+
+    <div style="background-color:#a01c8d;opacity:1;">
+        <p>American Dream<br>MKTO</p>
+    </div>
+
+    <div style="background-color:#a76a76;opacity:1;">
+        <p>Dangerous (feat. Sam Martin)<br>David Guetta</p>
+    </div>
+
+    <div style="background-color:#a704a5;opacity:1;">
+        <p>Ugly Heart<br>G.R.L.</p>
+    </div>
+
+    <div style="background-color:#9f937a;opacity:1;">
+        <p>Stay With Me<br>Sam Smith</p>
+    </div>
+
+    <div style="background-color:#bb01ad;opacity:1;">
+        <p>Sledgehammer<br>Fifth Harmony</p>
+    </div>
+
+    <div style="background-color:#9c777b;opacity:1;">
+        <p>Riptide<br>Vance Joy</p>
+    </div>
+
+    <div style="background-color:#9e0193;opacity:1;">
+        <p>Shut Up and Dance<br>Walk the Moon</p>
+    </div>
+
+    <div style="background-color:#a31995;opacity:1;">
+        <p>Hypnotic<br>Zella Day</p>
+    </div>
+
+    <div style="background-color:#bd2cab;opacity:1;">
+        <p>Closer<br>Mike Stud</p>
+    </div>
+
+    <div style="background-color:#ba029c;opacity:1;">
+        <p>Home<br>Naughty Boy</p>
+    </div>
+
+    <div style="background-color:#b50181;opacity:1;">
+        <p>Runaway (U & I)<br>Galantis</p>
+    </div>
+
+    <div style="background-color:#7f03ac;opacity:1;">
+        <p>Thats Me Right There<br>Jasmine V</p>
+    </div>
+
+    <div style="background-color:#b10ebf;opacity:1;">
+        <p>Let Your Heart Go (Break My Soul)<br>T.I.</p>
+    </div>
+
+    <div style="background-color:#b52a7c;opacity:1;">
+        <p>Young Blood<br>Bea Miller</p>
+    </div>
+
+    <div style="background-color:#b10182;opacity:1;">
+        <p>Top of the World<br>Anthem Lights</p>
+    </div>
+
+    <div style="background-color:#9f568f;opacity:1;">
+        <p>Can't Stop (feat. Kanye West)<br>Theophilus London</p>
+    </div>
+
+    <div style="background-color:#932665;opacity:1;">
+        <p>Say You Love Me<br>Jessie Ware</p>
+    </div>
+
+    <div style="background-color:#9500b3;opacity:1;">
+        <p>Comeback<br>Ella Eyre</p>
+    </div>
+
+    <div style="background-color:#770fbc;opacity:1;">
+        <p>Heartbeat<br>Mat Kearney</p>
+    </div>
+
+    <div style="background-color:#bc009b;opacity:1;">
+        <p>Somebody Loves You<br>Betty Who</p>
+    </div>
+
+    <div style="background-color:#c00769;opacity:1;">
+        <p>Blame<br>Calvin Harris</p>
+    </div>
+
+    <div style="background-color:#740cce;opacity:1;">
+        <p>All About That Bass<br>Meghan Trainor</p>
+    </div>
+
+    <div style="background-color:#6f7dc7;opacity:1;">
+        <p>Thinking Out Loud<br>Ed Sheeran</p>
+    </div>
+
+    <div style="background-color:#b30095;opacity:1;">
+        <p>Animals<br>Maroon 5</p>
+    </div>
+
+    <div style="background-color:#9e856e;opacity:1;">
+        <p>Stay With Me<br>Sam Smith</p>
+    </div>
+
+    <div style="background-color:#a0a190;opacity:1;">
+        <p>Take Me To Church<br>Hozier</p>
+    </div>
+
+    <div style="background-color:#9d0568;opacity:1;">
+        <p>Chandelier<br>Sia</p>
+    </div>
+
+    <div style="background-color:#8642b5;opacity:1;">
+        <p>Bang Bang<br>Jessie J</p>
+    </div>
+
+    <div style="background-color:#970b95;opacity:1;">
+        <p>The Days<br>Avicii</p>
+    </div>
+
+    <div style="background-color:#a76a76;opacity:1;">
+        <p>Dangerous (feat. Sam Martin)<br>David Guetta</p>
+    </div>
+
+    <div style="background-color:#7f0000;opacity:1;">
+        <p>Outside<br>Calvin Harris</p>
+    </div>
+
+    <div style="background-color:#9d0077;opacity:1;">
+        <p>Steal My Girl<br>One Direction</p>
+    </div>
+
+    <div style="background-color:#b601ad;opacity:1;">
+        <p>Break Free<br>Ariana Grande</p>
+    </div>
+
+    <div style="background-color:#690bc5;opacity:1;">
+        <p>Rude<br>Magic!</p>
+    </div>
+
+    <div style="background-color:#7009b6;opacity:1;">
+        <p>Cool Kids<br>Echosmith</p>
+    </div>
+
+    <div style="background-color:#9005c1;opacity:1;">
+        <p>Prayer in C - Robin Schulz Radio Edit<br>Lilly Wood and The Prick</p>
+    </div>
+
+    <div style="background-color:#9733bc;opacity:1;">
+        <p>Black Widow<br>Iggy Azalea</p>
+    </div>
+
+    <div style="background-color:#a86eb4;opacity:1;">
+        <p>Geronimo<br>Sheppard</p>
+    </div>
+
+    <div style="background-color:#ba0278;opacity:1;">
+        <p>Love Me Harder<br>Ariana Grande</p>
+    </div>
+
+    <div style="background-color:#ae0b83;opacity:1;">
+        <p>Heroes (we could be)<br>Alesso</p>
+    </div>
+
+    <div style="background-color:#6f03bc;opacity:1;">
+        <p>Maps<br>Maroon 5</p>
+    </div>
+
+    <div style="background-color:#5f02ce;opacity:1;">
+        <p>Don't<br>Ed Sheeran</p>
+    </div>
+
+    <div style="background-color:#809bad;opacity:1;">
+        <p>I'm Not The Only One<br>Sam Smith</p>
+    </div>
+
+    <div style="background-color:#77ec55;opacity:1;">
+        <p>All of Me<br>John Legend</p>
+    </div>
+
+    <div style="background-color:#832acb;opacity:1;">
+        <p>Rather Be (feat. Jess Glynne)<br>Clean Bandit</p>
+    </div>
+
+    <div style="background-color:#9c777b;opacity:1;">
+        <p>Riptide<br>Vance Joy</p>
+    </div>
+
+    <div style="background-color:#9f007d;opacity:1;">
+        <p>Superheroes<br>The Script</p>
+    </div>
+
+    <div style="background-color:#a310bb;opacity:1;">
+        <p>Habits (Stay High)<br>Tove Lo</p>
+    </div>
+
+    <div style="background-color:#7629b8;opacity:1;">
+        <p>Am I Wrong<br>Nico & Vinz</p>
+    </div>
+
+    <div style="background-color:#bb018c;opacity:1;">
+        <p>A Sky Full of Stars<br>Coldplay</p>
+    </div>
+
+    <div style="background-color:#9505a9;opacity:1;">
+        <p>Problem<br>Ariana Grande</p>
+    </div>
+
+    <div style="background-color:#b208b1;opacity:1;">
+        <p>Shower<br>Becky G</p>
+    </div>
+
+    <div style="background-color:#9889db;opacity:1;">
+        <p>Don't Tell 'Em<br>Jeremih</p>
+    </div>
+
+    <div style="background-color:#6f9fa3;opacity:1;">
+        <p>I See Fire<br>Ed Sheeran</p>
+    </div>
+
+    <div style="background-color:#a704a5;opacity:1;">
+        <p>Ugly Heart<br>G.R.L.</p>
+    </div>
+
+    <div style="background-color:#8702d3;opacity:1;">
+        <p>Waves - Robin Schulz Radio Edit<br>Mr. Probz</p>
+    </div>
+
+    <div style="background-color:#910597;opacity:1;">
+        <p>Summer<br>Calvin Harris</p>
+    </div>
+
+    <div style="background-color:#7268e2;opacity:1;">
+        <p>Stolen Dance<br>Milky Chance</p>
+    </div>
+
+    <div style="background-color:#a918a4;opacity:1;">
+        <p>Lovers on the Sun (feat. Sam Martin)<br>David Guetta</p>
+    </div>
+
+    <div style="background-color:#9d9be0;opacity:1;">
+        <p>I'm an Albatraoz<br>AronChupa</p>
+    </div>
+
+    <div style="background-color:#6c45a5;opacity:1;">
+        <p>Happy - From "Despicable Me 2"<br>Pharrell Williams</p>
+    </div>
+
+    <div style="background-color:#bc1460;opacity:1;">
+        <p>Warriors<br>Imagine Dragons</p>
+    </div>
+
+    <div style="background-color:#7110f2;opacity:1;">
+        <p>Anaconda<br>Nicki Minaj</p>
+    </div>
+
+    <div style="background-color:#a902b2;opacity:1;">
+        <p>Jealous<br>Nick Jonas</p>
+    </div>
+
+    <div style="background-color:#ab19e8;opacity:1;">
+        <p>Fancy<br>Iggy Azalea</p>
+    </div>
+
+    <div style="background-color:#911ab8;opacity:1;">
+        <p>Fireball<br>Pitbull</p>
+    </div>
+
+    <div style="background-color:#5c4ed1;opacity:1;">
+        <p>Sing<br>Ed Sheeran</p>
+    </div>
+
+    <div style="background-color:#841ab6;opacity:1;">
+        <p>Budapest<br>George Ezra</p>
+    </div>
+
+    <div style="background-color:#9715aa;opacity:1;">
+        <p>Boom Clap<br>Charli XCX</p>
+    </div>
+
+    <div style="background-color:#8798a3;opacity:1;">
+        <p>Trumpets<br>Jason Derulo</p>
+    </div>
+
+    <div style="background-color:#ad0bad;opacity:1;">
+        <p>Ghost<br>Ella Henderson</p>
+    </div>
+
+    <div style="background-color:#9f11a9;opacity:1;">
+        <p>Counting Stars<br>OneRepublic</p>
+    </div>
+
+    <div style="background-color:#6c05af;opacity:1;">
+        <p>This Is How We Do<br>Katy Perry</p>
+    </div>
+
+    <div style="background-color:#a76383;opacity:1;">
+        <p>Let Her Go<br>Passenger</p>
+    </div>
+
+    <div style="background-color:#ad3753;opacity:1;">
+        <p>Demons<br>Imagine Dragons</p>
+    </div>
+
+    <div style="background-color:#cb217b;opacity:1;">
+        <p>Radioactive<br>Imagine Dragons</p>
+    </div>
+
+    <div style="background-color:#9630d3;opacity:1;">
+        <p>Cheerleader - Felix Jaehn Remix Radio Edit<br>Omi</p>
+    </div>
+
+    <div style="background-color:#93047f;opacity:1;">
+        <p>Latch<br>Disclosure</p>
+    </div>
+
+    <div style="background-color:#c7009c;opacity:1;">
+        <p>Bad (feat. Vassy) - Radio Edit<br>David Guetta</p>
+    </div>
+
+    <div style="background-color:#700cc5;opacity:1;">
+        <p>Lips Are Movin<br>Meghan Trainor</p>
+    </div>
+
+    <div style="background-color:#a808d0;opacity:1;">
+        <p>I Don't Fuck With You<br>Big Sean</p>
+    </div>
+
+    <div style="background-color:#8f06bc;opacity:1;">
+        <p>Magic<br>Coldplay</p>
+    </div>
+
+    <div style="background-color:#7516b2;opacity:1;">
+        <p>Wiggle (feat. Snoop Dogg)<br>Jason Derulo</p>
+    </div>
+
+    <div style="background-color:#b40156;opacity:1;">
+        <p>Centuries<br>Fall Out Boy</p>
+    </div>
+
+    <div style="background-color:#a80fca;opacity:1;">
+        <p>Hot N*gga<br>Bobby Shmurda</p>
+    </div>
+
+    <div style="background-color:#680cb6;opacity:1;">
+        <p>Bailando - Spanish Version<br>Enrique Iglesias</p>
+    </div>
+
+    <div style="background-color:#8801b3;opacity:1;">
+        <p>Wicked Wonderland<br>Martin Tungevaag</p>
+    </div>
+
+    <div style="background-color:#9e0193;opacity:1;">
+        <p>Shut Up and Dance<br>Walk the Moon</p>
+    </div>
+
+    <div style="background-color:#8f16ad;opacity:1;">
+        <p>Pompeii<br>Bastille</p>
+    </div>
+
+    <div style="background-color:#934c6d;opacity:1;">
+        <p>In Your Arms<br>Nico & Vinz</p>
+    </div>
+
+    <div style="background-color:#9f01a5;opacity:1;">
+        <p>Dark Horse<br>Katy Perry</p>
+    </div>
+
+    <div style="background-color:#a402af;opacity:1;">
+        <p>Baby Don't Lie<br>Gwen Stefani</p>
+    </div>
+
+    <div style="background-color:#8c2e8d;opacity:1;">
+        <p>Do I Wanna Know?<br>Arctic Monkeys</p>
+    </div>
+
+    <div style="background-color:#940694;opacity:1;">
+        <p>Timber<br>Pitbull</p>
+    </div>
+
+    <div style="background-color:#8f0085;opacity:1;">
+        <p>Wake Me Up<br>Avicii</p>
+    </div>
+
+    <div style="background-color:#cd00ba;opacity:1;">
+        <p>Stay High - Habits Remix<br>Tove Lo</p>
+    </div>
+
+    <div style="background-color:#c314d7;opacity:1;">
+        <p>Hideaway<br>Kiesza</p>
+    </div>
+
+    <div style="background-color:#b0085e;opacity:1;">
+        <p>Amnesia<br>5 Seconds Of Summer</p>
+    </div>
+
+    <div style="background-color:#b300a2;opacity:1;">
+        <p>Wasted<br>Tisto</p>
+    </div>
+
+    <div style="background-color:#8109b7;opacity:1;">
+        <p>Classic<br>MKTO</p>
+    </div>
+
+    <div style="background-color:#8d22c8;opacity:1;">
+        <p>Royals<br>Lorde</p>
+    </div>
+
+    <div style="background-color:#9bc49e;opacity:1;">
+        <p>0 To 100 / The Catch Up<br>Drake</p>
+    </div>
+
+    <div style="background-color:#8807a2;opacity:1;">
+        <p>Can't Hold Us - feat. Ray Dalton<br>Macklemore & Ryan Lewis</p>
+    </div>
+
+    <div style="background-color:#8800a6;opacity:1;">
+        <p>Safe and Sound<br>Capital Cities</p>
+    </div>
+
+    <div style="background-color:#7e04c2;opacity:1;">
+        <p>i<br>Kendrick Lamar</p>
+    </div>
+
+    <div style="background-color:#8e33a7;opacity:1;">
+        <p>Money On My Mind<br>Sam Smith</p>
+    </div>
+
+    <div style="background-color:#8f0479;opacity:1;">
+        <p>L.A.LOVE (la la)<br>Fergie</p>
+    </div>
+
+    <div style="background-color:#7cfa67;opacity:1;">
+        <p>Latch - Acoustic<br>Sam Smith</p>
+    </div>
+
+    <div style="background-color:#bf15b8;opacity:1;">
+        <p>Blind Heart - Radio Edit<br>CAZZETTE</p>
+    </div>
+
+    <div style="background-color:#a30ec8;opacity:1;">
+        <p>The Monster<br>Eminem</p>
+    </div>
+
+    <div style="background-color:#d800d0;opacity:1;">
+        <p>Turn Down for What<br>DJ Snake</p>
+    </div>
+
+    <div style="background-color:#a21a93;opacity:1;">
+        <p>Sun Goes Down (feat. Jasmine Thompson) - Radio Mix<br>Robin Schulz</p>
+    </div>
+
+    <div style="background-color:#8d01c6;opacity:1;">
+        <p>Hold On, We're Going Home<br>Drake</p>
+    </div>
+
+    <div style="background-color:#b74e83;opacity:1;">
+        <p>Burn<br>Ellie Goulding</p>
+    </div>
+
+    <div style="background-color:#9773d2;opacity:1;">
+        <p>Sail<br>AWOLNATION</p>
+    </div>
+
+    <div style="background-color:#a2018a;opacity:1;">
+        <p>Me And My Broken Heart<br>Rixton</p>
+    </div>
+
+    <div style="background-color:#930f9d;opacity:1;">
+        <p>The Heart Wants What It Wants<br>Selena Gomez</p>
+    </div>
+
+    <div style="background-color:#9d59d8;opacity:1;">
+        <p>Only<br>Nicki Minaj</p>
+    </div>
+
+    <div style="background-color:#b1208a;opacity:1;">
+        <p>Under Control<br>Calvin Harris</p>
+    </div>
+
+    <div style="background-color:#6f02db;opacity:1;">
+        <p>Faded<br>Zhu</p>
+    </div>
+
+    <div style="background-color:#b20076;opacity:1;">
+        <p>Animals<br>Maroon 5</p>
+    </div>
+
+    <div style="background-color:#740cce;opacity:1;">
+        <p>All About That Bass<br>Meghan Trainor</p>
+    </div>
+
+    <div style="background-color:#8196ac;opacity:1;">
+        <p>I'm Not The Only One<br>Sam Smith</p>
+    </div>
+
+    <div style="background-color:#7516b2;opacity:1;">
+        <p>Wiggle (feat. Snoop Dogg)<br>Jason Derulo</p>
+    </div>
+
+    <div style="background-color:#a302af;opacity:1;">
+        <p>Baby Don't Lie<br>Gwen Stefani</p>
+    </div>
+
+    <div style="background-color:#9d0077;opacity:1;">
+        <p>Steal My Girl<br>One Direction</p>
+    </div>
+
+    <div style="background-color:#be0669;opacity:1;">
+        <p>Blame<br>Calvin Harris</p>
+    </div>
+
+    <div style="background-color:#9889db;opacity:1;">
+        <p>Don't Tell 'Em<br>Jeremih</p>
+    </div>
+
+    <div style="background-color:#931f74;opacity:1;">
+        <p>Say You Love Me<br>Jessie Ware</p>
+    </div>
+
+    <div style="background-color:#a76a76;opacity:1;">
+        <p>Dangerous (feat. Sam Martin)<br>David Guetta</p>
+    </div>
+
+    <div style="background-color:#7d07c1;opacity:1;">
+        <p>i<br>Kendrick Lamar</p>
+    </div>
+
+    <div style="background-color:#ba0278;opacity:1;">
+        <p>Love Me Harder<br>Ariana Grande</p>
+    </div>
+
+    <div style="background-color:#9007ac;opacity:1;">
+        <p>Break The Rules<br>Charli XCX</p>
+    </div>
+
+    <div style="background-color:#983abc;opacity:1;">
+        <p>Black Widow<br>Iggy Azalea</p>
+    </div>
+
+    <div style="background-color:#a902b2;opacity:1;">
+        <p>Jealous<br>Nick Jonas</p>
+    </div>
+
+    <div style="background-color:#9f387e;opacity:1;">
+        <p>Hold You Down<br>DJ Khaled</p>
+    </div>
+
+    <div style="background-color:#a704a5;opacity:1;">
+        <p>Ugly Heart<br>G.R.L.</p>
+    </div>
+
+    <div style="background-color:#a468bf;opacity:1;">
+        <p>Till It's Gone<br>Yelawolf</p>
+    </div>
+
+    <div style="background-color:#b900ad;opacity:1;">
+        <p>Booty<br>Jennifer Lopez</p>
+    </div>
+
+    <div style="background-color:#917c6a;opacity:1;">
+        <p>I Don't Want To Change You<br>Damien Rice</p>
+    </div>
+
+    <div style="background-color:#850aaf;opacity:1;">
+        <p>Adis<br>Ricky Martin</p>
+    </div>
+
+    <div style="background-color:#a001a2;opacity:1;">
+        <p>Never Been In Love (feat. Icona Pop)<br>Cobra Starship</p>
+    </div>
+
+    <div style="background-color:#b0085e;opacity:1;">
+        <p>Amnesia<br>5 Seconds Of Summer</p>
+    </div>
+
+    <div style="background-color:#6c05af;opacity:1;">
+        <p>This Is How We Do<br>Katy Perry</p>
+    </div>
+
+    <div style="background-color:#a44bd7;opacity:1;">
+        <p>Believe Me<br>Lil Wayne</p>
+    </div>
+
+    <div style="background-color:#934e6d;opacity:1;">
+        <p>In Your Arms<br>Nico & Vinz</p>
+    </div>
+
+    <div style="background-color:#a40fb0;opacity:1;">
+        <p>Habits (Stay High)<br>Tove Lo</p>
+    </div>
+
+    <div style="background-color:#bf039e;opacity:1;">
+        <p>Go<br>Grimes</p>
+    </div>
+
+    <div style="background-color:#9a02b2;opacity:1;">
+        <p>No Enemiesz<br>Kiesza</p>
+    </div>
+
+    <div style="background-color:#8204b4;opacity:1;">
+        <p>She Knows<br>Ne-Yo</p>
+    </div>
+
+    <div style="background-color:#a60099;opacity:1;">
+        <p>Beggin For Thread<br>Banks</p>
+    </div>
+
+    <div style="background-color:#b33c6b;opacity:1;">
+        <p>Queen<br>Perfume Genius</p>
+    </div>
+
+    <div style="background-color:#ba0d7d;opacity:1;">
+        <p>What Are You Waiting For?<br>Nickelback</p>
+    </div>
+
+    <div style="background-color:#854ab3;opacity:1;">
+        <p>Bang Bang<br>Jessie J</p>
+    </div>
+
+    <div style="background-color:#a76bb5;opacity:1;">
+        <p>Geronimo<br>Sheppard</p>
+    </div>
+
+    <div style="background-color:#6f7dc7;opacity:1;">
+        <p>Thinking Out Loud<br>Ed Sheeran</p>
+    </div>
+
+    <div style="background-color:#99018a;opacity:1;">
+        <p>All About You<br>Hilary Duff</p>
+    </div>
+
+    <div style="background-color:#a309db;opacity:1;">
+        <p>Don't Panic<br>French Montana</p>
+    </div>
+
+    <div style="background-color:#c6067e;opacity:1;">
+        <p>Surrender<br>Cash Cash</p>
+    </div>
+
+    <div style="background-color:#886a90;opacity:1;">
+        <p>I Put A Spell On You<br>Annie Lennox</p>
+    </div>
+
+    <div style="background-color:#7009b6;opacity:1;">
+        <p>Cool Kids<br>Echosmith</p>
+    </div>
+
+    <div style="background-color:#8200a8;opacity:1;">
+        <p>The Chamber<br>Lenny Kravitz</p>
+    </div>
+
+    <div style="background-color:#9416b3;opacity:1;">
+        <p>Sober<br>Childish Gambino</p>
+    </div>
+
+    <div style="background-color:#a004e2;opacity:1;">
+        <p>Body Language<br>Kid Ink</p>
+    </div>
+
+    <div style="background-color:#c716e8;opacity:1;">
+        <p>Multiply<br>A$AP Rocky</p>
+    </div>
+
+    <div style="background-color:#b61d8c;opacity:1;">
+        <p>X<br>Chris Brown</p>
+    </div>
+
+    <div style="background-color:#c51a95;opacity:1;">
+        <p>Yellow Flicker Beat<br>Lorde</p>
+    </div>
+
+    <div style="background-color:#bf006c;opacity:1;">
+        <p>I Am Machine<br>Three Days Grace</p>
+    </div>
+
+    <div style="background-color:#9409cd;opacity:1;">
+        <p>About the Money<br>T.I.</p>
+    </div>
+
+    <div style="background-color:#9201ad;opacity:1;">
+        <p>Fire<br>Gavin DeGraw</p>
+    </div>
+
+    <div style="background-color:#bf0094;opacity:1;">
+        <p>The Only Way Out<br>Bush</p>
+    </div>
+
+    <div style="background-color:#96c195;opacity:1;">
+        <p>0 To 100 / The Catch Up<br>Drake</p>
+    </div>
+
+    <div style="background-color:#9b1ba4;opacity:1;">
+        <p>Wait On Me<br>Rixton</p>
+    </div>
+
+    <div style="background-color:#b7039d;opacity:1;">
+        <p>Chasing Time<br>Azealia Banks</p>
+    </div>
+
+    <div style="background-color:#a915a0;opacity:1;">
+        <p>Real Love<br>Clean Bandit</p>
+    </div>
+
+    <div style="background-color:#7f03ac;opacity:1;">
+        <p>Thats Me Right There<br>Jasmine V</p>
+    </div>
+
+    <div style="background-color:#a808d0;opacity:1;">
+        <p>I Don't Fuck With You<br>Big Sean</p>
+    </div>
+
+    <div style="background-color:#a705b3;opacity:1;">
+        <p>Right Now<br>Mary J. Blige</p>
+    </div>
+
+    <div style="background-color:#a25265;opacity:1;">
+        <p>Georgia<br>Vance Joy</p>
+    </div>
+
+    <div style="background-color:#8a0ccc;opacity:1;">
+        <p>Touchin, Lovin (feat. Nicki Minaj)<br>Trey Songz</p>
+    </div>
+
+    <div style="background-color:#69c99a;opacity:1;">
+        <p>Try<br>Colbie Caillat</p>
+    </div>
+
+    <div style="background-color:#cc095f;opacity:1;">
+        <p>Blue Blue<br>Iamamiwhoami</p>
+    </div>
+
+    <div style="background-color:#d5025e;opacity:1;">
+        <p>No Good in Goodbye<br>The Script</p>
+    </div>
+
+    <div style="background-color:#9004ba;opacity:1;">
+        <p>Latch<br>Disclosure</p>
+    </div>
+
+    <div style="background-color:#a70089;opacity:1;">
+        <p>Being Beige<br>The Smashing Pumpkins</p>
+    </div>
+
+    <div style="background-color:#9b24ae;opacity:1;">
+        <p>Cadillactica<br>Big K.R.I.T.</p>
+    </div>
+
+    <div style="background-color:#b208b1;opacity:1;">
+        <p>Shower<br>Becky G</p>
+    </div>
+
+    <div style="background-color:#76019d;opacity:1;">
+        <p>Needle and a Knife<br>Tennis</p>
+    </div>
+
+    <div style="background-color:#c5aa66;opacity:1;">
+        <p>Go (Blank Sea)<br>Zola Jesus</p>
+    </div>
+
+    <div style="background-color:#b00f7d;opacity:1;">
+        <p>Two Weeks<br>FKA twigs</p>
+    </div>
+
+    <div style="background-color:#8f01cb;opacity:1;">
+        <p>BO$$<br>Fifth Harmony</p>
+    </div>
+
+    <div style="background-color:#813d7c;opacity:1;">
+        <p>Let It Be<br>Labrinth</p>
+    </div>
+
+    <div style="background-color:#875862;opacity:1;">
+        <p>The Pressure<br>Jhene Aiko</p>
+    </div>
+
+    <div style="background-color:#cb2698;opacity:1;">
+        <p>Higher<br>SBTRKT</p>
+    </div>
+
+    <div style="background-color:#991c7f;opacity:1;">
+        <p>Lost Stars<br>Adam Levine</p>
+    </div>
+
+    <div style="background-color:#8807a2;opacity:1;">
+        <p>Can't Hold Us - feat. Ray Dalton<br>Macklemore & Ryan Lewis</p>
+    </div>
+
+    <div style="background-color:#ac005b;opacity:1;">
+        <p>I Can't Pretend<br>The Drums</p>
+    </div>
+
+    <div style="background-color:#b74e83;opacity:1;">
+        <p>Burn<br>Ellie Goulding</p>
+    </div>
+
+    <div style="background-color:#d4017f;opacity:1;">
+        <p>Love Me Again<br>John Newman</p>
+    </div>
+
+    <div style="background-color:#ac00b7;opacity:1;">
+        <p>We Dem Boyz<br>Wiz Khalifa</p>
+    </div>
+
+    <div style="background-color:#672bc4;opacity:1;">
+        <p>Never Coming Down<br>Guster</p>
+    </div>
+
+    <div style="background-color:#773ab1;opacity:1;">
+        <p>Hands<br>Macy Gray</p>
+    </div>
+
+    <div style="background-color:#920679;opacity:1;">
+        <p>Girls Chase Boys<br>Ingrid Michaelson</p>
+    </div>
+
+    <div style="background-color:#710ac3;opacity:1;">
+        <p>Do It Again<br>The Ting Tings</p>
+    </div>
+
+    <div style="background-color:#af035c;opacity:1;">
+        <p>Lucifer<br>Sondre Lerche</p>
+    </div>
+
+    <div style="background-color:#9b2b9b;opacity:1;">
+        <p>Ain't It Fun<br>Paramore</p>
+    </div>
+
+    <div style="background-color:#800fb7;opacity:1;">
+        <p>Studio<br>Schoolboy Q</p>
+    </div>
+
+    <div style="background-color:#ad006b;opacity:1;">
+        <p>I Wanna Take You Home<br>Nada Surf</p>
+    </div>
+
+    <div style="background-color:#b201bf;opacity:1;">
+        <p>Tribe (feat. Jesse Boykins III)<br>Theophilus London</p>
+    </div>
+
+    <div style="background-color:#8f07bd;opacity:1;">
+        <p>Magic<br>Coldplay</p>
+    </div>
+
+    <div style="background-color:#9f0298;opacity:1;">
+        <p>Words As Weapons<br>Seether</p>
+    </div>
+
+    <div style="background-color:#7320b3;opacity:1;">
+        <p>Really Don't Care<br>Demi Lovato</p>
+    </div>
+
+    <div style="background-color:#bf1198;opacity:1;">
+        <p>I Lived<br>OneRepublic</p>
+    </div>
+
+    <div style="background-color:#ad03a6;opacity:1;">
+        <p>Recognize (feat. Drake)<br>PARTYNEXTDOOR</p>
+    </div>
+
+    <div style="background-color:#8000a7;opacity:1;">
+        <p>Tell You (Today)<br>Robyn</p>
+    </div>
+
+    <div style="background-color:#71c4b0;opacity:1;">
+        <p>Can't Do Without You<br>Caribou</p>
+    </div>
+
+    <div style="background-color:#7e3c8c;opacity:1;">
+        <p>Mirrors<br>Justin Timberlake</p>
+    </div>
+
+    <div style="background-color:#c64583;opacity:1;">
+        <p>Often<br>The Weeknd</p>
+    </div>
+
+    <div style="background-color:#b10387;opacity:1;">
+        <p>Bulletproof Picasso<br>Train</p>
+    </div>
+
+    <div style="background-color:#81029d;opacity:1;">
+        <p>Chain My Name<br>POLIA</p>
+    </div>
+
+    <div style="background-color:#d80167;opacity:1;">
+        <p>The Devil In I<br>Slipknot</p>
+    </div>
+
+    <div style="background-color:#b50158;opacity:1;">
+        <p>Centuries<br>Fall Out Boy</p>
+    </div>
+
+    <div style="background-color:#c01442;opacity:1;">
+        <p>Warriors<br>Imagine Dragons</p>
+    </div>
+
+    <div style="background-color:#999d88;opacity:1;">
+        <p>Every Other Freckle<br>alt-J</p>
+    </div>
+
+    <div style="background-color:#9c038a;opacity:1;">
+        <p>Zombie<br>Jamie T</p>
+    </div>
+
+    <div style="background-color:#9e0193;opacity:1;">
+        <p>Shut Up and Dance<br>Walk the Moon</p>
+    </div>
+
+    <div style="background-color:#ca0049;opacity:1;">
+        <p>All The Rage Back Home<br>Interpol</p>
+    </div>
+
+    <div style="background-color:#ba0d7d;opacity:1;">
+        <p>What Are You Waiting For?<br>Nickelback</p>
+    </div>
+
+    <div style="background-color:#bc0f79;opacity:1;">
+        <p>Everywhere I Go (Kings And Queens)<br>New Politics</p>
+    </div>
+
+    <div style="background-color:#f2006e;opacity:1;">
+        <p>Now We Die<br>Machine Head</p>
+    </div>
+
+    <div style="background-color:#c9006f;opacity:1;">
+        <p>At War With Reality<br>At The Gates</p>
+    </div>
+
+    <div style="background-color:#9a17ae;opacity:1;">
+        <p>Forgive & Forget<br>The Kooks</p>
+    </div>
+
+    <div style="background-color:#bf006c;opacity:1;">
+        <p>I Am Machine<br>Three Days Grace</p>
+    </div>
+
+    <div style="background-color:#bf0094;opacity:1;">
+        <p>The Only Way Out<br>Bush</p>
+    </div>
+
+    <div style="background-color:#7310ab;opacity:1;">
+        <p>No One Is Lost<br>Stars</p>
+    </div>
+
+    <div style="background-color:#a40069;opacity:1;">
+        <p>The Best Day<br>Thurston Moore</p>
+    </div>
+
+    <div style="background-color:#d2007c;opacity:1;">
+        <p>Heart Of Fire<br>Black Veil Brides</p>
+    </div>
+
+    <div style="background-color:#a80061;opacity:1;">
+        <p>Nothin' Left<br>Death From Above 1979</p>
+    </div>
+
+    <div style="background-color:#8f5f89;opacity:1;">
+        <p>Do I Wanna Know?<br>Arctic Monkeys</p>
+    </div>
+
+    <div style="background-color:#a20084;opacity:1;">
+        <p>No Shows<br>Gerard Way</p>
+    </div>
+
+    <div style="background-color:#b60086;opacity:1;">
+        <p>Harvest Home<br>Mark Lanegan Band</p>
+    </div>
+
+    <div style="background-color:#c00077;opacity:1;">
+        <p>Ready and Willing<br>New Found Glory</p>
+    </div>
+
+    <div style="background-color:#b10089;opacity:1;">
+        <p>Everything's Gone<br>In Flames</p>
+    </div>
+
+    <div style="background-color:#bb0074;opacity:1;">
+        <p>People Like Me, We Just Don't Play<br>Emarosa</p>
+    </div>
+
+    <div style="background-color:#d20062;opacity:1;">
+        <p>Proving Grounds<br>Attila</p>
+    </div>
+
+    <div style="background-color:#d40063;opacity:1;">
+        <p>Crash the Gates<br>Yellowcard</p>
+    </div>
+
+    <div style="background-color:#a70089;opacity:1;">
+        <p>Being Beige<br>The Smashing Pumpkins</p>
+    </div>
+
+    <div style="background-color:#d10076;opacity:1;">
+        <p>Limits to Infinity<br>Scar Symmetry</p>
+    </div>
+
+    <div style="background-color:#86016e;opacity:1;">
+        <p>Back To The Shack<br>Weezer</p>
+    </div>
+
+    <div style="background-color:#b70070;opacity:1;">
+        <p>World On Fire<br>Slash</p>
+    </div>
+
+    <div style="background-color:#ed008c;opacity:1;">
+        <p>Avalanche<br>The Ghost Inside</p>
+    </div>
+
+    <div style="background-color:#ee0079;opacity:1;">
+        <p>Reincarnate<br>Motionless In White</p>
+    </div>
+
+    <div style="background-color:#a989b3;opacity:1;">
+        <p>White Lies<br>Milo Greene</p>
+    </div>
+
+    <div style="background-color:#a60192;opacity:1;">
+        <p>Daze<br>Poets of the Fall</p>
+    </div>
+
+    <div style="background-color:#cc0058;opacity:1;">
+        <p>Sweetest Poison<br>Texas In July</p>
+    </div>
+
+    <div style="background-color:#de0591;opacity:1;">
+        <p>On the Rocks<br>The Rural Alberta Advantage</p>
+    </div>
+
+    <div style="background-color:#921f7a;opacity:1;">
+        <p>Won't Be Around No More<br>Avi Buffalo</p>
+    </div>
+
+    <div style="background-color:#b23a86;opacity:1;">
+        <p>Leaving My Old Life Behind<br>Franz Ferdinand</p>
+    </div>
+
+    <div style="background-color:#9f0091;opacity:1;">
+        <p>Imperator<br>Godflesh</p>
+    </div>
+
+    <div style="background-color:#98008e;opacity:1;">
+        <p>Shake the Cage<br>KMFDM</p>
+    </div>
+
+    <div style="background-color:#e6002a;opacity:1;">
+        <p>Blood Mantra<br>Decapitated</p>
+    </div>
+
+    <div style="background-color:#f70043;opacity:1;">
+        <p>Human Disaster<br>The Acacia Strain</p>
+    </div>
+
+    <div style="background-color:#e4005f;opacity:1;">
+        <p>End of an Empire<br>Celldweller</p>
+    </div>
+
+    <div style="background-color:#84088f;opacity:1;">
+        <p>Can't Break Me Down<br>Billy Idol</p>
+    </div>
+
+    <div style="background-color:#a001b0;opacity:1;">
+        <p>Closer<br>Kele</p>
+    </div>
+
+    <div style="background-color:#cc255f;opacity:1;">
+        <p>Repine<br>Pianos Become The Teeth</p>
+    </div>
+
+    <div style="background-color:#ac005b;opacity:1;">
+        <p>I Can't Pretend<br>The Drums</p>
+    </div>
+
+    <div style="background-color:#f10072;opacity:1;">
+        <p>Sick Like Me<br>In This Moment</p>
+    </div>
+
+    <div style="background-color:#9b008a;opacity:1;">
+        <p>Honor Is All We Know<br>Rancid</p>
+    </div>
+
+    <div style="background-color:#b7003e;opacity:1;">
+        <p>Raise Your Voice<br>Obey The Brave</p>
+    </div>
+
+    <div style="background-color:#8a0a9c;opacity:1;">
+        <p>Algiers<br>The Afghan Whigs</p>
+    </div>
+
+    <div style="background-color:#dc016c;opacity:1;">
+        <p>Anywhere But Here<br>Finch</p>
+    </div>
+
+    <div style="background-color:#d5003c;opacity:1;">
+        <p>Pussy Vultures<br>Dance Gavin Dance</p>
+    </div>
+
+    <div style="background-color:#b114a1;opacity:1;">
+        <p>Cigarette Daydreams<br>Cage The Elephant</p>
+    </div>
+
+    <div style="background-color:#c0672f;opacity:1;">
+        <p>2 Hip Soul<br>Cymbals Eat Guitars</p>
+    </div>
+
+    <div style="background-color:#9b2b9b;opacity:1;">
+        <p>Ain't It Fun<br>Paramore</p>
+    </div>
+
+    <div style="background-color:#8d0576;opacity:1;">
+        <p>First<br>Cold War Kids</p>
+    </div>
+
+    <div style="background-color:#c30688;opacity:1;">
+        <p>Palace - Foals remix<br>Wild Beasts</p>
+    </div>
+
+    <div style="background-color:#ad006b;opacity:1;">
+        <p>I Wanna Take You Home<br>Nada Surf</p>
+    </div>
+
+    <div style="background-color:#ca0080;opacity:1;">
+        <p>Metal Zone<br>The Vines</p>
+    </div>
+
+    <div style="background-color:#c40088;opacity:1;">
+        <p>Gotta Love the Ride<br>Mr. Big</p>
+    </div>
+
+    <div style="background-color:#c6015d;opacity:1;">
+        <p>The Lucky Ones<br>Minus The Bear</p>
+    </div>
+
+    <div style="background-color:#9f0298;opacity:1;">
+        <p>Words As Weapons<br>Seether</p>
+    </div>
+
+    <div style="background-color:#8e0479;opacity:1;">
+        <p>Gotta Get Away<br>The Black Keys</p>
+    </div>
+
+    <div style="background-color:#d9005f;opacity:1;">
+        <p>Mercy<br>Sylosis</p>
+    </div>
+
+    <div style="background-color:#b4017a;opacity:1;">
+        <p>Wrong Side Of Heaven<br>Five Finger Death Punch</p>
+    </div>
+
+    <div style="background-color:#e10037;opacity:1;">
+        <p>Guards Of Contagion<br>Unearth</p>
+    </div>
+
+    <div style="background-color:#b10084;opacity:1;">
+        <p>Do Or Die<br>Thirty Seconds To Mars</p>
+    </div>
+
+    <div style="background-color:#a5063a;opacity:1;">
+        <p>The Ghost Within<br>...And You Will Know Us By The Trail Of Dead</p>
+    </div>
+
+    <div style="background-color:#e90068;opacity:1;">
+        <p>FIRE!<br>Affiance</p>
+    </div>
+
+    <div style="background-color:#8709a6;opacity:1;">
+        <p>You've Got A Lot On Your Mind<br>Sloan</p>
+    </div>
+
+    <div style="background-color:#710288;opacity:1;">
+        <p>Dislocation<br>Counting Crows</p>
+    </div>
+
+    <div style="background-color:#c21675;opacity:1;">
+        <p>Last January<br>The Twilight Sad</p>
+    </div>
+
+    <div style="background-color:#8013ac;opacity:1;">
+        <p>Do You<br>Spoon</p>
+    </div>
+
+    <div style="background-color:#9000a7;opacity:1;">
+        <p>eez-eh<br>Kasabian</p>
+    </div>
+
+    <div style="background-color:#8b7483;opacity:1;">
+        <p>Would You Fight For My Love?<br>Jack White</p>
+    </div>
+
+    <div style="background-color:#bf0024;opacity:1;">
+        <p>Can You Feel My Heart<br>Bring Me The Horizon</p>
+    </div>
+
+    <div style="background-color:#b0005f;opacity:1;">
+        <p>Armageddon Days<br>American Hi-Fi</p>
+    </div>
+
+    <div style="background-color:#8c1d3f;opacity:1;">
+        <p>Exit Only<br>Deerhoof</p>
+    </div>
+
+    <div style="background-color:#7d0384;opacity:1;">
+        <p>recollect (Shapeshifters)<br>Hands Like Houses</p>
+    </div>
+
+    <div style="background-color:#b50071;opacity:1;">
+        <p>Moving On<br>Asking Alexandria</p>
+    </div>
+
+    <div style="background-color:#910090;opacity:1;">
+        <p>It's Horseshit!<br>Electric Six</p>
+    </div>
+
+    <div style="background-color:#b0137f;opacity:1;">
+        <p>Set Me on Fire<br>Flyleaf</p>
+    </div>
+
+    <div style="background-color:#9c6d6e;opacity:1;">
+        <p>Rainbow<br>Robert Plant</p>
+    </div>
+
+    <div style="background-color:#cb003c;opacity:1;">
+        <p>I Dont Want To Be Here Anymore<br>Rise Against</p>
+    </div>
+
+    <div style="background-color:#b70082;opacity:1;">
+        <p>Hater<br>Korn</p>
+    </div>
+
+    <div style="background-color:#c20085;opacity:1;">
+        <p>1000hp<br>Godsmack</p>
+    </div>
+
+    <div style="background-color:#b4008a;opacity:1;">
+        <p>Pins and Needles<br>Nonpoint</p>
+    </div>
+
+    <div style="background-color:#950095;opacity:1;">
+        <p>Hail to the King<br>Avenged Sevenfold</p>
+    </div>
+
+    <div style="background-color:#bb0077;opacity:1;">
+        <p>Mind Over Matter<br>Young the Giant</p>
+    </div>
+
+    <div style="background-color:#b00097;opacity:1;">
+        <p>Untraveled Road<br>Thousand Foot Krutch</p>
+    </div>
+
+    <div style="background-color:#d40071;opacity:1;">
+        <p>War Eternal<br>Arch Enemy</p>
+    </div>
+
+    <div style="background-color:#c50476;opacity:1;">
+        <p>Until It's Gone<br>Linkin Park</p>
+    </div>
+
+    <div style="background-color:#ae0276;opacity:1;">
+        <p>Red Eyes<br>The War On Drugs</p>
+    </div>
+
+    <div style="background-color:#a8329b;opacity:1;">
+        <p>Champions Of Red Wine<br>The New Pornographers</p>
+    </div>
+
+    <div style="background-color:#840c98;opacity:1;">
+        <p>Reflektor<br>Arcade Fire</p>
+    </div>
+
+    <div style="background-color:#cc005c;opacity:1;">
+        <p>The Motherload<br>Mastodon</p>
+    </div>
+
+    <div style="background-color:#a9dd84;opacity:1;">
+        <p>I Need My Girl<br>The National</p>
+    </div>
+
+    <div style="background-color:#c2005f;opacity:1;">
+        <p>Jungle<br>X Ambassadors</p>
+    </div>
+
+    <div style="background-color:#c71a85;opacity:1;">
+        <p>Shot At The Night<br>The Killers</p>
+    </div>
+
+    <div style="background-color:#5131b9;opacity:1;">
+        <p>I Heard It Through The Grapevine<br>Marvin Gaye</p>
+    </div>
+
+    <div style="background-color:#53d9b0;opacity:1;">
+        <p>Breaking Up Is Hard To Do<br>Carole King</p>
+    </div>
+
+    <div style="background-color:#598388;opacity:1;">
+        <p>Blueberry Hill<br>Fats Domino</p>
+    </div>
+
+    <div style="background-color:#32af7f;opacity:1;">
+        <p>Ain't That A Shame<br>Fats Domino</p>
+    </div>
+
+    <div style="background-color:#5e6e9a;opacity:1;">
+        <p>Be-Bop-A-Lula<br>Gene Vincent & His Blue Caps</p>
+    </div>
+
+    <div style="background-color:#4c9c71;opacity:1;">
+        <p>Why Do Fools Fall in Love<br>Frankie Lymon</p>
+    </div>
+
+    <div style="background-color:#669b85;opacity:1;">
+        <p>Just A Gigolo/I Ain't Got Nobody (Medley)<br>Louis Prima</p>
+    </div>
+
+    <div style="background-color:#4aa08c;opacity:1;">
+        <p>A Teenager In Love<br>Dion & The Belmonts</p>
+    </div>
+
+    <div style="background-color:#4cb243;opacity:1;">
+        <p>I Wonder Why - 1999 Digital Remaster<br>Dion & The Belmonts</p>
+    </div>
+
+    <div style="background-color:#594494;opacity:1;">
+        <p>Hello Mary Lou (Goodbye Heart) - 2005 Digital Remaster<br>Ricky Nelson</p>
+    </div>
+
+    <div style="background-color:#780e9f;opacity:1;">
+        <p>Bus Stop - 1997 Remastered Version<br>The Hollies</p>
+    </div>
+
+    <div style="background-color:#9b0050;opacity:1;">
+        <p>The House Of The Rising Sun<br>The Animals</p>
+    </div>
+
+    <div style="background-color:#8870bb;opacity:1;">
+        <p>These Boots Are Made For Walkin'<br>Nancy Sinatra</p>
+    </div>
+
+    <div style="background-color:#784a72;opacity:1;">
+        <p>California Girls - 2001 Stereo Remix<br>The Beach Boys</p>
+    </div>
+
+    <div style="background-color:#60159b;opacity:1;">
+        <p>Sloop John B - 1996 - Remaster<br>The Beach Boys</p>
+    </div>
+
+    <div style="background-color:#514fa8;opacity:1;">
+        <p>Do Wah Diddy Diddy - 2007 Remastered Version<br>Manfred Mann</p>
+    </div>
+
+    <div style="background-color:#7a8b69;opacity:1;">
+        <p>The Hippy Hippy Shake<br>The Swinging Blue Jeans</p>
+    </div>
+
+    <div style="background-color:#602166;opacity:1;">
+        <p>Good Golly Miss Molly<br>The Swinging Blue Jeans</p>
+    </div>
+
+    <div style="background-color:#4eabb3;opacity:1;">
+        <p>The Young Ones - 2005 Remastered Version<br>Freddie & The Dreamers</p>
+    </div>
+
+    <div style="background-color:#644368;opacity:1;">
+        <p>Ferry Cross the Mersey - 2002 Remastered Version<br>Gerry & The Pacemakers</p>
+    </div>
+
+    <div style="background-color:#6b8da6;opacity:1;">
+        <p>Big Spender - 2000 Remastered Version<br>Shirley Bassey</p>
+    </div>
+
+    <div style="background-color:#72707e;opacity:1;">
+        <p>A World Without Love<br>Peter And Gordon</p>
+    </div>
+
+    <div style="background-color:#6bc96c;opacity:1;">
+        <p>Take Good Care Of My Baby<br>Bobby Vee</p>
+    </div>
+
+    <div style="background-color:#63757f;opacity:1;">
+        <p>The Night Has A Thousand Eyes<br>Bobby Vee</p>
+    </div>
+
+    <div style="background-color:#5b597a;opacity:1;">
+        <p>One Fine Day<br>The Chiffons</p>
+    </div>
+
+    <div style="background-color:#4daf75;opacity:1;">
+        <p>He's So Fine<br>The Chiffons</p>
+    </div>
+
+    <div style="background-color:#823f68;opacity:1;">
+        <p>Crimson And Clover<br>Tommy James & The Shondells</p>
+    </div>
+
+    <div style="background-color:#5033c6;opacity:1;">
+        <p>I Think We're Alone Now<br>Tommy James</p>
+    </div>
+
+    <div style="background-color:#76366c;opacity:1;">
+        <p>Walk - Don't Run<br>The Ventures</p>
+    </div>
+
+    <div style="background-color:#98006e;opacity:1;">
+        <p>All Along The Watchtower<br>Jimi Hendrix</p>
+    </div>
+
+    <div style="background-color:#561fae;opacity:1;">
+        <p>September<br>Earth, Wind & Fire</p>
+    </div>
+
+    <div style="background-color:#59b79c;opacity:1;">
+        <p>Oh, Pretty Woman<br>Roy Orbison</p>
+    </div>
+
+    <div style="background-color:#698b7f;opacity:1;">
+        <p>Mr. Tambourine Man<br>The Byrds</p>
+    </div>
+
+    <div style="background-color:#87119e;opacity:1;">
+        <p>Reach Out, I'll Be There - Single Version (Mono)<br>Four Tops</p>
+    </div>
+
+    <div style="background-color:#7300c1;opacity:1;">
+        <p>Dizzy<br>Tommy Roe</p>
+    </div>
+
+    <div style="background-color:#50979b;opacity:1;">
+        <p>Groovin'<br>The Young Rascals</p>
+    </div>
+
+    <div style="background-color:#76067b;opacity:1;">
+        <p>Last Train To Clarksville<br>The Monkees</p>
+    </div>
+
+    <div style="background-color:#5c3eb3;opacity:1;">
+        <p>Tighten Up - Pt. 1<br>Archie Bell & The Drells</p>
+    </div>
+
+    <div style="background-color:#6b2f83;opacity:1;">
+        <p>I'm A Believer<br>The Monkees</p>
+    </div>
+
+    <div style="background-color:#406eb4;opacity:1;">
+        <p>King Of The Road<br>Roger Miller</p>
+    </div>
+
+    <div style="background-color:#79b485;opacity:1;">
+        <p>Johnny B. Goode - Single Version<br>Chuck Berry</p>
+    </div>
+
+    <div style="background-color:#6566ca;opacity:1;">
+        <p>Grease<br>C.C. Productions</p>
+    </div>
+
+    <div style="background-color:#679fa5;opacity:1;">
+        <p>Sherry - 2007 Remastered Version<br>Frankie Valli & The Four Seasons</p>
+    </div>
+
+    <div style="background-color:#7273c2;opacity:1;">
+        <p>Big Girls Don't Cry - 2007 Remastered Version<br>Frankie Valli & The Four Seasons</p>
+    </div>
+
+    <div style="background-color:#6b57b1;opacity:1;">
+        <p>Walk Like A Man - 2007 Remastered Version<br>Frankie Valli & The Four Seasons</p>
+    </div>
+
+    <div style="background-color:#9267b7;opacity:1;">
+        <p>Stay - 2007 Remastered Version<br>Frankie Valli & The Four Seasons</p>
+    </div>
+
+    <div style="background-color:#80baa1;opacity:1;">
+        <p>Crazy Little Thing Called Love<br>Queen</p>
+    </div>
+
+    <div style="background-color:#5f3f9f;opacity:1;">
+        <p>Rockin' Robin<br>Michael Jackson</p>
+    </div>
+
+    <div style="background-color:#4a80aa;opacity:1;">
+        <p>Stand By Me - Single/LP Version<br>Ben E. King</p>
+    </div>
+
+    <div style="background-color:#701ab1;opacity:1;">
+        <p>Think<br>Aretha Franklin</p>
+    </div>
+
+    <div style="background-color:#6504b2;opacity:1;">
+        <p>Chain Of Fools<br>Aretha Franklin</p>
+    </div>
+
+    <div style="background-color:#7670c0;opacity:1;">
+        <p>Cecilia<br>Simon & Garfunkel</p>
+    </div>
+
+    <div style="background-color:#5165a1;opacity:1;">
+        <p>Rama Lama Ding Dong<br>The Edsels</p>
+    </div>
+
+    <div style="background-color:#58307e;opacity:1;">
+        <p>Brown Eyed Girl<br>Van Morrison</p>
+    </div>
+
+    <div style="background-color:#770fa2;opacity:1;">
+        <p>Mama Told Me (Not To Come) - Single Version<br>Three Dog Night</p>
+    </div>
+
+    <div style="background-color:#783c9d;opacity:1;">
+        <p>Magic Carpet Ride<br>Steppenwolf</p>
+    </div>
+
+    <div style="background-color:#46baa1;opacity:1;">
+        <p>Mrs. Robinson<br>Simon & Garfunkel</p>
+    </div>
+
+    <div style="background-color:#8f1565;opacity:1;">
+        <p>Proud Mary<br>Tina Turner</p>
+    </div>
+
+    <div style="background-color:#78199f;opacity:1;">
+        <p>Nutbush City Limits<br>Ike & Tina Turner</p>
+    </div>
+
+    <div style="background-color:#9709d4;opacity:1;">
+        <p>Brick House<br>Commodores</p>
+    </div>
+
+    <div style="background-color:#4e8996;opacity:1;">
+        <p>Wonderful World<br>Sam Cooke</p>
+    </div>
+
+    <div style="background-color:#57ca7c;opacity:1;">
+        <p>Tutti Frutti<br>Little Richard</p>
+    </div>
+
+    <div style="background-color:#877a86;opacity:1;">
+        <p>Ain't No Sunshine<br>Bill Withers</p>
+    </div>
+
+    <div style="background-color:#569ca5;opacity:1;">
+        <p>That'll Be The Day<br>Buddy Holly</p>
+    </div>
+
+    <div style="background-color:#8f048a;opacity:1;">
+        <p>The Tears Of A Clown - Album Version (Stereo)<br>Smokey Robinson & The Miracles</p>
+    </div>
+
+    <div style="background-color:#5c2ad1;opacity:1;">
+        <p>Hold On I'm Coming<br>Sam & Dave</p>
+    </div>
+
+    <div style="background-color:#56b4a4;opacity:1;">
+        <p>A Horse with No Name<br>America</p>
+    </div>
+
+    <div style="background-color:#6d21b1;opacity:1;">
+        <p>December, 1963 [Oh What A Night!]<br>Frankie Valli & The Four Seasons</p>
+    </div>
+
+    <div style="background-color:#62bca5;opacity:1;">
+        <p>That's All Right Mama<br>Elvis Presley</p>
+    </div>
+
+    <div style="background-color:#793a81;opacity:1;">
+        <p>Let's Get It On<br>Marvin Gaye</p>
+    </div>
+
+    <div style="background-color:#50aeac;opacity:1;">
+        <p>My Baby Left Me - 2005 DSD remastered<br>Elvis Presley</p>
+    </div>
+
+    <div style="background-color:#5696af;opacity:1;">
+        <p>Bo Diddley<br>Buddy Holly</p>
+    </div>
+
+    <div style="background-color:#73cea8;opacity:1;">
+        <p>Peggy Sue<br>Buddy Holly</p>
+    </div>
+
+    <div style="background-color:#53d7a2;opacity:1;">
+        <p>All Shook Up<br>Elvis Presley</p>
+    </div>
+
+    <div style="background-color:#6051a0;opacity:1;">
+        <p>Jailhouse Rock<br>Elvis Presley</p>
+    </div>
+
+    <div style="background-color:#43fb95;opacity:1;">
+        <p>I've Got A Woman<br>Ray Charles</p>
+    </div>
+
+    <div style="background-color:#65b1b6;opacity:1;">
+        <p>(Sittin' On) The Dock Of The Bay<br>Otis Redding</p>
+    </div>
+
+    <div style="background-color:#a10035;opacity:1;">
+        <p>When A Man Loves A Woman<br>Percy Sledge</p>
+    </div>
+
+    <div style="background-color:#660c60;opacity:1;">
+        <p>Hound Dog<br>Elvis Presley</p>
+    </div>
+
+    <div style="background-color:#872c96;opacity:1;">
+        <p>Try A Little Tenderness<br>Otis Redding</p>
+    </div>
+
+    <div style="background-color:#65318d;opacity:1;">
+        <p>Son Of A Preacher Man<br>Dusty Springfield</p>
+    </div>
+
+    <div style="background-color:#6a02bd;opacity:1;">
+        <p>Mustang Sally<br>The Commitments</p>
+    </div>
+
+    <div style="background-color:#67c24f;opacity:1;">
+        <p>The Tracks Of My Tears - Album Version (Stereo)<br>Smokey Robinson & The Miracles</p>
+    </div>
+
+    <div style="background-color:#4e9cd4;opacity:1;">
+        <p>Return To Sender<br>Elvis Presley</p>
+    </div>
+
+    <div style="background-color:#6e0f9e;opacity:1;">
+        <p>Reach Out, I'll Be There - Edit<br>Four Tops</p>
+    </div>
+
+    <div style="background-color:#708aba;opacity:1;">
+        <p>Let's Stay Together<br>Al Green</p>
+    </div>
+
+    <div style="background-color:#8d9e66;opacity:1;">
+        <p>Shake, Rattle & Roll<br>Bill Haley & His Comets</p>
+    </div>
+
+    <div style="background-color:#700c98;opacity:1;">
+        <p>Tequila<br>The Champs</p>
+    </div>
+
+    <div style="background-color:#7f848d;opacity:1;">
+        <p>Wake up, Little Susie<br>The Everly Brothers</p>
+    </div>
+
+    <div style="background-color:#775e49;opacity:1;">
+        <p>Great Balls Of Fire<br>Jerry Lee Lewis</p>
+    </div>
+
+    <div style="background-color:#65d7ae;opacity:1;">
+        <p>The Great Pretender (Re-Recorded / Remastered)<br>The Platters</p>
+    </div>
+
+    <div style="background-color:#8fc846;opacity:1;">
+        <p>What A Wonderful World<br>Louis Armstrong</p>
+    </div>
+
+    <div style="background-color:#73b19b;opacity:1;">
+        <p>No Particular Place To Go - Single Version<br>Chuck Berry</p>
+    </div>
+
+    <div style="background-color:#7910ba;opacity:1;">
+        <p>Sultans Of Swing<br>Dire Straits</p>
+    </div>
+
+    <div style="background-color:#6450ab;opacity:1;">
+        <p>A Whiter Shade Of Pale<br>Percy Sledge</p>
+    </div>
+
+    <div style="background-color:#7fb52b;opacity:1;">
+        <p>At Last - Single Version<br>Etta James</p>
+    </div>
+
+    <div style="background-color:#81d371;opacity:1;">
+        <p>I Just Want To Make Love To You<br>Etta James</p>
+    </div>
+
+    <div style="background-color:#731fca;opacity:1;">
+        <p>Soul Man - LP/Single Version<br>Sam & Dave</p>
+    </div>
+
+    <div style="background-color:#4e1fbf;opacity:1;">
+        <p>In The Midnight Hour<br>Wilson Pickett</p>
+    </div>
+
+    <div style="background-color:#7732d9;opacity:1;">
+        <p>Get Up Offa That Thing<br>James Brown</p>
+    </div>
+
+    <div style="background-color:#85fd9e;opacity:1;">
+        <p>Chord Left<br>Agnes Obel</p>
+    </div>
+
+    <div style="background-color:#7afc5c;opacity:1;">
+        <p>Dbut<br>Mlanie Laurent</p>
+    </div>
+
+    <div style="background-color:#8dfb4f;opacity:1;">
+        <p>River Flows In You - Original<br>Yiruma</p>
+    </div>
+
+    <div style="background-color:#90fc80;opacity:1;">
+        <p>Comptine d'un autre t, l'aprs-midi<br>Yann Tiersen</p>
+    </div>
+
+    <div style="background-color:#5afd67;opacity:1;">
+        <p>Ambre<br>Nils Frahm</p>
+    </div>
+
+    <div style="background-color:#73fd3b;opacity:1;">
+        <p>Rverie, L 68<br>Claude Debussy</p>
+    </div>
+
+    <div style="background-color:#7bfb54;opacity:1;">
+        <p>L'un part...L'autre Reste (Version Piano)<br>Frederic Botton</p>
+    </div>
+
+    <div style="background-color:#7bf86b;opacity:1;">
+        <p>Image-Autumn-Womb<br>Goldmund</p>
+    </div>
+
+    <div style="background-color:#7bfd3a;opacity:1;">
+        <p>Fin<br>Mlanie Laurent</p>
+    </div>
+
+    <div style="background-color:#7ff649;opacity:1;">
+        <p>De Novo Adagio (Intro)<br>Alicia Keys</p>
+    </div>
+
+    <div style="background-color:#61fc6f;opacity:1;">
+        <p>this was written by hand<br>David Lang</p>
+    </div>
+
+    <div style="background-color:#7bf143;opacity:1;">
+        <p>Bars of St Brides<br>Unknown</p>
+    </div>
+
+    <div style="background-color:#73f279;opacity:1;">
+        <p>Merry Christmas Mr. Lawrence<br>Ryuichi Sakamoto</p>
+    </div>
+
+    <div style="background-color:#61fd75;opacity:1;">
+        <p>Haiku<br>Stefano Guzzetti</p>
+    </div>
+
+    <div style="background-color:#96f94d;opacity:1;">
+        <p>Soffia La Notte - Night Breaths<br>Fabrizio Paterlini</p>
+    </div>
+
+    <div style="background-color:#84fb54;opacity:1;">
+        <p>To the Sky (Moderate)<br>Dirk Maassen</p>
+    </div>
+
+    <div style="background-color:#88f740;opacity:1;">
+        <p>Primavera<br>Ludovico Einaudi</p>
+    </div>
+
+    <div style="background-color:#7cf946;opacity:1;">
+        <p>aisatsana [102]<br>Aphex Twin</p>
+    </div>
+
+    <div style="background-color:#75fd55;opacity:1;">
+        <p>Unknown<br>Franz Liszt</p>
+    </div>
+
+    <div style="background-color:#73fd72;opacity:1;">
+        <p>Unknown<br>Glenn Gould</p>
+    </div>
+
+    <div style="background-color:#7bfd3c;opacity:1;">
+        <p>Intermezzo No. 2 in B-flat minor, Op. 117 - Andante non troppo e con molta espressione<br>Glenn Gould</p>
+    </div>
+
+    <div style="background-color:#73fd53;opacity:1;">
+        <p>Intermezzo No. 3 in C-sharp minor, Op. 117 - Andante con moto<br>Glenn Gould</p>
+    </div>
+
+    <div style="background-color:#74fd49;opacity:1;">
+        <p>Unknown<br>Elizabeth Sombart</p>
+    </div>
+
+    <div style="background-color:#6afd76;opacity:1;">
+        <p>Last Song<br>Alexis Ffrench</p>
+    </div>
+
+    <div style="background-color:#77fc6c;opacity:1;">
+        <p>Time Spent<br>Deaf Center</p>
+    </div>
+
+    <div style="background-color:#73fd53;opacity:1;">
+        <p>Unknown<br>Nikolai Tokarev</p>
+    </div>
+
+    <div style="background-color:#87f434;opacity:1;">
+        <p>The Heart Asks Pleasure First/The Promise - Edit<br>Michael Nyman</p>
+    </div>
+
+    <div style="background-color:#7bfd63;opacity:1;">
+        <p>Unknown<br>Carolyn Jones</p>
+    </div>
+
+    <div style="background-color:#7bfb15;opacity:1;">
+        <p>Six Etudes for Piano - q = 108<br>Bruce Brubaker</p>
+    </div>
+
+    <div style="background-color:#7bfa3d;opacity:1;">
+        <p>Six Etudes for Piano - q = 96<br>Bruce Brubaker</p>
+    </div>
+
+    <div style="background-color:#6efd58;opacity:1;">
+        <p>Unknown<br>Olivier Messiaen</p>
+    </div>
+
+    <div style="background-color:#6dfd53;opacity:1;">
+        <p>Unknown<br>Gabriel Faur</p>
+    </div>
+
+    <div style="background-color:#7bfc62;opacity:1;">
+        <p>Unknown<br>Maurice Ravel</p>
+    </div>
+
+    <div style="background-color:#6ffd69;opacity:1;">
+        <p>Waltz No. 9 in A-Flat Major, Op. 69 No. 1 "The Farewell"<br>Pamela Howland</p>
+    </div>
+
+    <div style="background-color:#62fc50;opacity:1;">
+        <p>Unknown<br>Henrik Mwe</p>
+    </div>
+
+    <div style="background-color:#75fc5e;opacity:1;">
+        <p>Written On The Sky<br>Max Richter</p>
+    </div>
+
+    <div style="background-color:#7afb36;opacity:1;">
+        <p>Unknown<br>Vienna Symphony Orchestra, Robert Wagner & Felicja Blumental</p>
+    </div>
+
+    <div style="background-color:#7cfc43;opacity:1;">
+        <p>Unknown<br>Alexandre Tharaud/Les Violins du Roy/Bernard Labadie</p>
+    </div>
+
+    <div style="background-color:#7afd67;opacity:1;">
+        <p>Unknown<br>Vitaly Margulis</p>
+    </div>
+
+    <div style="background-color:#68fd68;opacity:1;">
+        <p>Pachelbel Canon In D - Solo Piano - Cannon, Kanon<br>Johann Pachelbel</p>
+    </div>
+
+    <div style="background-color:#73fc77;opacity:1;">
+        <p>Imagine (Piano Instrumental) - Pop<br>At The Piano</p>
+    </div>
+
+    <div style="background-color:#8cf958;opacity:1;">
+        <p>Atlantico<br>Roberto Cacciapaglia</p>
+    </div>
+
+    <div style="background-color:#8dfb3b;opacity:1;">
+        <p>Rhapsody No. 1 in B Minor for Solo Piano, Op. 79<br>Johannes Brahms</p>
+    </div>
+
+    <div style="background-color:#72fd76;opacity:1;">
+        <p>Adagio in B Minor, K. 540<br>Walter Klien</p>
+    </div>
+
+    <div style="background-color:#76fd58;opacity:1;">
+        <p>Unknown<br>Johannes Brahms</p>
+    </div>
+
+    <div style="background-color:#7cfd6f;opacity:1;">
+        <p>Subtle The Sum<br>Goldmund</p>
+    </div>
+
+    <div style="background-color:#77fc64;opacity:1;">
+        <p>Siegfried Idyll<br>Howard Shore</p>
+    </div>
+
+    <div style="background-color:#79db5b;opacity:1;">
+        <p>Do You Want to Build a Snowman?<br>Kristen Bell</p>
+    </div>
+
+    <div style="background-color:#8c8f8a;opacity:1;">
+        <p>Let It Go<br>Idina Menzel</p>
+    </div>
+
+    <div style="background-color:#79d250;opacity:1;">
+        <p>For the First Time in Forever (Reprise)<br>Kristen Bell</p>
+    </div>
+
+    <div style="background-color:#74b981;opacity:1;">
+        <p>Under The Sea<br>Samuel E. Wright</p>
+    </div>
+
+    <div style="background-color:#65eb59;opacity:1;">
+        <p>Part of Your World<br>Jodi Benson</p>
+    </div>
+
+    <div style="background-color:#78d791;opacity:1;">
+        <p>Belle<br>Chorus - Beauty And the Beast</p>
+    </div>
+
+    <div style="background-color:#3eb1cd;opacity:1;">
+        <p>Hi-Diddle-Dee-Dee (An Actor's Life for Me)<br>Walter Catlett</p>
+    </div>
+
+    <div style="background-color:#57cf9c;opacity:1;">
+        <p>The Siamese Cat Song<br>Si and Am</p>
+    </div>
+
+    <div style="background-color:#83d24f;opacity:1;">
+        <p>Circle Of Life<br>Lebo M</p>
+    </div>
+
+    <div style="background-color:#95f326;opacity:1;">
+        <p>When You Wish Upon A Star - From Pinocchio/Original Motion Picture Soundtrack<br>Cliff Edwards</p>
+    </div>
+
+    <div style="background-color:#88ca8c;opacity:1;">
+        <p>Yo Ho (A Pirate's Life For Me) - From Pirates of the Caribbean<br>Xavier Atencio</p>
+    </div>
+
+    <div style="background-color:#529787;opacity:1;">
+        <p>Hakuna Matata<br>Nathan Lane</p>
+    </div>
+
+    <div style="background-color:#478f6b;opacity:1;">
+        <p>A Girl Worth Fighting For<br>Lea Salonga</p>
+    </div>
+
+    <div style="background-color:#50cb6f;opacity:1;">
+        <p>Can You Feel the Love Tonight<br>Joseph Williams</p>
+    </div>
+
+    <div style="background-color:#5ad682;opacity:1;">
+        <p>Mine, Mine, Mine - Soundtrack<br>David Ogden Stiers</p>
+    </div>
+
+    <div style="background-color:#754d8d;opacity:1;">
+        <p>I Just Can't Wait To Be King<br>Elton John</p>
+    </div>
+
+    <div style="background-color:#6ce154;opacity:1;">
+        <p>You'll Be In My Heart<br>Glenn Close</p>
+    </div>
+
+    <div style="background-color:#73ed58;opacity:1;">
+        <p>Colors Of The Wind - From Pocahontas/Original Motion Picture Soundtrack<br>Judy Kuhn</p>
+    </div>
+
+    <div style="background-color:#65d183;opacity:1;">
+        <p>Be Our Guest<br>Angela Lansbury</p>
+    </div>
+
+    <div style="background-color:#6fd987;opacity:1;">
+        <p>Chim Chim Cher-ee - From "Mary Poppins"<br>Dick Dyke</p>
+    </div>
+
+    <div style="background-color:#79f652;opacity:1;">
+        <p>A Dream Is A Wish Your Heart Makes - Soundtrack<br>Ilene Woods</p>
+    </div>
+
+    <div style="background-color:#78c749;opacity:1;">
+        <p>Some Day My Prince Will Come<br>Adriana Caselotti</p>
+    </div>
+
+    <div style="background-color:#55c3c6;opacity:1;">
+        <p>The Bare Necessities<br>Phil Harris</p>
+    </div>
+
+    <div style="background-color:#88a489;opacity:1;">
+        <p>A Whole New World (Aladdin's Theme)<br>Peabo Bryson</p>
+    </div>
+
+    <div style="background-color:#7ef73d;opacity:1;">
+        <p>An Unusual Prince/Once Upon A Dream - From "Sleeping Beauty"/Soundtrack Version<br>Mary Costa</p>
+    </div>
+
+    <div style="background-color:#42b8a9;opacity:1;">
+        <p>Kiss The Girl - From "The Little Mermaid"<br>Samuel E. Wright</p>
+    </div>
+
+    <div style="background-color:#63c07d;opacity:1;">
+        <p>A Spoonful Of Sugar - From "Mary Poppins"<br>Julie Andrews</p>
+    </div>
+
+    <div style="background-color:#57967f;opacity:1;">
+        <p>Supercalifragilisticexpialidocious - From "Mary Poppins"<br>Julie Andrews</p>
+    </div>
+
+    <div style="background-color:#6dd75d;opacity:1;">
+        <p>Chim Chim Cher-ee<br>Dick Van Dyke</p>
+    </div>
+
+    <div style="background-color:#6a3a84;opacity:1;">
+        <p>Oo-De-Lally - From Robin Hood<br>Pickin' On Series</p>
+    </div>
+
+    <div style="background-color:#65d4b2;opacity:1;">
+        <p>You've Got A Friend In Me<br>Randy Newman</p>
+    </div>
+
+    <div style="background-color:#79de43;opacity:1;">
+        <p>Go The Distance - From "Hercules"<br>Roger Bart</p>
+    </div>
+
+    <div style="background-color:#55e7a4;opacity:1;">
+        <p>Friend Like Me - "From Aladdin"<br>The Magical Singers</p>
+    </div>
+
+    <div style="background-color:#61e071;opacity:1;">
+        <p>Prince Ali - "From Aladdin"<br>The Magical Singers</p>
+    </div>
+
+    <div style="background-color:#72c9c7;opacity:1;">
+        <p>Heigh-Ho - Soundtrack<br>The Dwarf Chorus</p>
+    </div>
+
+    <div style="background-color:#a2fd39;opacity:1;">
+        <p>Main Title (Bella Notte)/The Wag of a Dog's Tail - Soundtrack<br>Disney Studio Chorus</p>
+    </div>
+
+    <div style="background-color:#74be4e;opacity:1;">
+        <p>Beauty and the Beast<br>Angela Lansbury</p>
+    </div>
+
+    <div style="background-color:#64f770;opacity:1;">
+        <p>You Can Fly! You Can Fly! You Can Fly!<br>Bobby Driscoll</p>
+    </div>
+
+</body>
+</html>
