@@ -10,7 +10,8 @@ if __name__ == '__main__':
 		for i in range(1, len(trs)):
 			tr = trs.eq(i)
 			song = tr.children().eq(1).text().strip(' "')
-			list.append(song)
+			artist = tr.children().eq(2).text().strip(' "')
+			list.append((song, artist))
 		result[year] = list
 	with open('Billboard_year-end_top_30_singles.txt', 'w') as f:
 		import json 
