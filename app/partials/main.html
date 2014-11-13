@@ -1,10 +1,31 @@
-<img src="img/start.png" style="width:100%; height: 400px">
-<div class="" id="search">
-	<form class="form-inline" role="form" ng-submit="visualize()">
+<img src="img/start.png" style="width:100%; height: 400px" ng-hide="playlists">
+<form role="form">
+	<div class="col-md-4">
 		<div class="form-group">
-			<label class="sr-only" for="matchID">Match ID</label>
-			<input type="text" class="form-control" id="matchID" placeholder="Match ID" ng-model="matchID">
+			<label for="red">Red</label>
+			<select id="red" class="form-control" ng-model="red" ng-options="attr for attr in attrs">
+			</select>
 		</div>
-		<button type="submit" class="btn btn-default">Visualize</button>
-	</form>
-</div>
+	</div>
+	<div class="col-md-4">
+		<div class="form-group">
+			<label for="green">Green</label>
+			<select id="green" class="form-control" ng-model="green" ng-options="attr for attr in attrs">
+			</select>
+		</div>
+	</div>
+	<div class="col-md-4">
+		<div class="form-group">
+			<label for="blue">Blue</label>
+			<select id="blue" class="form-control" ng-model="blue" ng-options="attr for attr in attrs">
+			</select>
+		</div>
+	</div>
+</form>
+<form class="form-inline" role="form" ng-submit="addNewPlayList()">
+	<div class="form-group">
+		<label for="newList">Playlist</label>
+		<input type="text" class="form-control" id="newList" placeholder="Enter a new List" ng-model="newList">
+	</div>
+	<button type="submit" class="btn btn-info">Add a New List</button>
+</form>

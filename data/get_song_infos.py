@@ -19,7 +19,7 @@ if __name__ == '__main__':
 			search_results = song.search(artist=list[i][1], title=list[i][0])
 			if len(search_results) > 0:
 				a_s = search_results[0].audio_summary
-				a_s['song_name'] = list[i]
+				a_s['song_name'] = list[i][0]
 				a_s['artist_name'] = search_results[0].artist_name
 				temp.append(a_s)
 			i += 1
