@@ -57,15 +57,7 @@ angular.module('myApp.controllers', [])
             $scope.blue = 'speechiness';
             $scope.color = 'energy';
             $scope.billboard = billboard;
-            $scope.data = [];
-            for (var i = 0; i < 10; i++){
-                $scope.data.push([])
-            }
-            for (var year in billboard){
-                for (var i = 0; i < 10; i++){
-                    $scope.data[i].push(billboard[year][i]);
-                }
-            }
+            $scope.data = billboard;
 
             $scope.showDetail = function(song){
                 $scope.selectedSong = song;
