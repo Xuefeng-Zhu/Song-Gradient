@@ -37,6 +37,11 @@ angular.module('myApp.controllers', [])
             $('.modal').modal('show');
         }
 
+        $scope.toggleCollapse = function(key){
+            $(".panel-collapse").collapse('hide');
+            $("#collapse" + key).collapse('toggle');
+        }
+
         $scope.trustSrc = function(src) {
             return $sce.trustAsResourceUrl(src);
         }
