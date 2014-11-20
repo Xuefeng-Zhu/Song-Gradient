@@ -9,6 +9,7 @@ angular.module('myApp', [
 config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/main', {templateUrl: 'partials/main.html', controller: 'MainCtrl'});
   $routeProvider.when('/main2', {templateUrl: 'partials/main2.html', controller: 'MainCtrl2'});
+  $routeProvider.when('/main3', {templateUrl: 'partials/main3.html', controller: 'MainCtrl3'});
   $routeProvider.otherwise({redirectTo: '/main'});
 }]);
 
