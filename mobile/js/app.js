@@ -4,6 +4,9 @@
 // Declare app level module which depends on filters, and services
 angular.module('myApp', [
   'ngRoute',
+  'ngTouch',
+  'mobile-angular-ui',
+  'mobile-angular-ui.drag',
   'myApp.controllers'
 ]).
 config(['$routeProvider', function($routeProvider) {
