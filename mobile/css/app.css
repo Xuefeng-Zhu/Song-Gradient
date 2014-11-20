@@ -1,0 +1,15 @@
+/* app css stylesheet */
+
+#search {
+	/*margin-left: 40%;*/
+	margin-top: 5em;
+}
+
+.song-block {
+	height:100px;
+    width:100px;
+    float:left;
+    margin-left:0px;
+    margin-top:0px;
+    color: white
+}

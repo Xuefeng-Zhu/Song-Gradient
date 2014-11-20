@@ -1,0 +1,66 @@
+<img src="img/start.png" style="width:100%; height: 400px" ng-hide="playlists">
+<div class="alert alert-info alert-dismissible fade in" role="alert" ng-show="playlists">
+	<button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+	<h3>Click each block to see detail</h3>
+</div>
+<form role="form">
+	<div class="col-md-4">
+		<div class="form-group">
+			<label for="red">Red</label>
+			<select id="red" class="form-control" ng-model="red" ng-options="attr for attr in attrs">
+			</select>
+		</div>
+	</div>
+	<div class="col-md-4">
+		<div class="form-group">
+			<label for="green">Green</label>
+			<select id="green" class="form-control" ng-model="green" ng-options="attr for attr in attrs">
+			</select>
+		</div>
+	</div>
+	<div class="col-md-4">
+		<div class="form-group">
+			<label for="blue">Blue</label>
+			<select id="blue" class="form-control" ng-model="blue" ng-options="attr for attr in attrs">
+			</select>
+		</div>
+	</div>
+</form>
+
+<div ng-repeat="(key, value) in playlists" style="clear:both">
+	<h1>{{key}}</h1>
+	<div class="song-block" ng-repeat="song in value" style="background-color: rgb({{song[red]*255 | number: 0}}, {{song[green]*255 | number: 0}}, {{song[blue]*255 | number: 0}})" ng-click="showDetail(song)">
+		<p>{{song.name}}</p>
+		{{song.artist}}
+	</div>
+</div>
+
+<form class="form-inline" role="form" ng-submit="addNewPlayList()" style="clear: both">
+	<div class="form-group">
+		<label for="newList">Playlist</label>
+		<input type="text" class="form-control" id="newList" placeholder="Enter a new List" ng-model="newList">
+	</div>
+	<button type="submit" class="btn btn-info">Add a New List</button>
+</form>
+
+<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-body" style="text-align: left">
+				<p><b>Song Name: </b> {{selectedSong.name}}</p>
+				<p><b>Artist Name: </b> {{selectedSong.artist}}</p>
+				<p><b>Duration: </b> {{selectedSong.duration | number: 1}}s</p>
+				<p><b>Energy: </b> {{selectedSong.energy}}</p>
+				<p><b>Liveness: </b> {{selectedSong.liveness}}</p>
+				<p><b>Tempo: </b> {{selectedSong.tempo}}</p>
+				<p><b>Speechiness: </b> {{selectedSong.speechiness}}</p>
+				<p><b>Acousticness: </b> {{selectedSong.acousticness}}</p>
+				<p><b>Danceability: </b> {{selectedSong.danceability}}</p>
+				<p><b>Instrumentalness: </b> {{selectedSong.instrumentalness}}</p>
+				<p><b>Loudness: </b> {{selectedSong.loudness}}</p>
+				<p><b>Valence: </b> {{selectedSong.valence}}</p>
+				<iframe type="text/html" width="400" height="100" ng-src="{{trustSrc(selectedSong.steam)}}" frameborder="0">
+			</div>
+		</div>
+	</div>
+</div>
